@@ -1,323 +1,46 @@
-/*Web type scale*/
-
-/*http://type-scale.com/*/
-
-html {
-    font-size: 1em;
-}
-
 body {
-    background-color: #ffffff;
-    font-family: 'Amiri', serif;
-    font-weight: 400;
-    line-height: 1.45;
-    color: #333;
-}
-
-p {
-    margin-bottom: 1.3em;
-}
-
-p1 {
-    margin-bottom: 0em;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 1.414em 0 0.5em;
-    font-weight: inherit;
-    line-height: 1.2;
-}
-
-h1 {
-    margin-top: 0;
-    font-size: 3.157em;
+    background-image: url('../img/Background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.777em;
 }
 
 h2 {
-    font-size: 2.369em;
-}
-
-h4 {
-    margin: 0 0 1.414em;
-    font-size: 1.777em;
-    font-style: italic;
-    color: darkgray;
-}
-
-
-small,
-.font_small {
-    font-size: 0.75em;
-}
-
-/* link*/
-
-a {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.6vw;
-    /*    font-size: 2.369em;*/
-    font-style: italic;
-    color: white;
-    background-color: transparent;
-}
-
-a:hover {
-    /*    color: #D3D3D3;*/
-    color: transparent;
-    background-color: transparent;
-}
-
-a.pop:hover {
-    color: lightgrey;
-}
-
-/*button style*/
-
-/*class name use dot .*/
-
-.btn {
-    font-size: .8rem;
-    letter-spacing: .091em;
-    line-height: 1em;
-    /*    round the button*/
-    border-radius: 10px;
-    /*    clock wise for the padding setting */
-    padding: 1.8em 3.6em 1.8em 3.6em;
-    color: #fff;
-    background: rgba(0, 0, 255, 0.44);
-}
-
-.btn:hover {
-    /*    change the looking of button in hover mode*/
-    color: black;
-    opacity: 0.8;
-}
-
-
-/*
-.btn-outline {
-    color: indigo;
-    background-color: transparent;
-    border: 1px indigo solid;
-    transition: all .5;
-}
-
-.btn-outline:hover {
-    color: white;
-    background-color: indigo;
-}
-*/
-
-/*height*/
-
-html,
-body {
-    height: 100%;
-}
-
-
-/*view area*/
-
-.view {
-    color: darkgray;
-    height: 380px;
-    /*    height: 50%;*/
-    background-color: white;
-    background: url("../img/topfig.jpg")no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 3.6em;
-    margin-bottom: 1em;
-}
-
-.about {
-    background-color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 5em;
-}
-
-.pop {
-    font-family: 'Amiri', serif;
-    font-size: 1.8vw;
-    color: lightgrey;
-    font-style: normal;
-}
-
-.event {
-    background-color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top: 5em;
-    margin-bottom: 6em;
-}
-
-.exchange {
-    height: 123px;
-}
-
-#portfolio {
-    margin-top: 50px;
-}
-
-.p-display {
-    margin: 0 0 20px;
-}
-
-.tag {
-    position: absolute;
-    text-align: center;
-    margin-top: -45%;
-    top: 100%;
-    width: 87%;
-}
-
-/*portfolio modal*/
-
-.portfolio-link img:hover {
-    filter: drop-shadow(1px 1px 3px grey);
-}
-
-.portfolio-modal .modal-body {
-    position: static;
-}
-
-.portfolio-modal .modal-dialog {
-    max-width: 100%;
-    max-height: 100%;
-    height: 100%;
-    margin: 0;
-    /*    enable the overflow to set the screen no scrolling*/
-    /*    overflow: hidden;*/
-}
-
-.portfolio-modal .modal-content {
-    /*Change the paragraph font color*/
-    color: #2f2c2c;
-    padding: 0 0 2em 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: left;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    /*Change the background-color*/
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.portfolio-modal .modal-content h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 1em 0 0.5em;
-    font-weight: inherit;
-    line-height: 1.2;
-    font-size: 2.369em;
-    color: black;
-}
-
-.portfolio-modal .modal-content .item-details {
-    margin: 2em 0;
-}
-
-.portfolio-modal .modal-header {
-    border-bottom: none;
-}
-
-.portfolio-modal .close {
-    font-size: 2em;
-    padding-right: 1em;
-    font-weight: 200;
-}
-
-.portfolio-modal .modal-backdrop {
-    display: none;
-    opacity: 0;
-}
-
-.portfolio-modal .bottom {
-    padding: 3em;
-    padding-top: 4em;
-    padding-bottom: 1.3em;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-
-/*footer*/
-
-footer {
-    margin-top: 3em;
-    padding-top: 6em;
-    padding-bottom: 3em;
-    background-color: white;
-    background: url("../img/bottomfig.jpg")no-repeat center top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-footer .social {
-    font-size: 1em;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-footer .email a {
-    color: black;
-    font-size: 1em;
-    text-decoration: none;
-
+    font-family: 'Merienda', cursive;
 }
 
 /*navigation*/
-
 .navbackground {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #474747;
+    color: #f5e2de;
+    font-family: 'Merienda', cursive;
 }
 
-.navbar-light .navbar-toggler {
-    color: darkgrey;
-    /*    disable the button border*/
-    border-color: transparent;
+.homebackground {
+    background-color: white;
+    min-width: 280px;
+    margin-top: 150px;
+    padding: 50px 10px;
 }
 
-.navbar-light .navbar-brand {
-    color: black;
-    padding-top: 0;
+.portbackground {
+    background-color: white;
+    min-width: 280px;
+    margin-top: 200px;
+    padding: 50px 0px 0px 0px;
 }
 
-.navbar-light .navbar-brand:hover {
-    color: dodgerblue;
+.portfolio {
+    margin: 0px;
+    padding: 20px 10px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .5);
-    font-size: 1.1em;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: black;
-}
-
-
-/* The active link, when scroll to the section, the menu items will turn to different color */
-
-.navbar-light a.active {
-    color: black !important;
-    background-color: transparent!important;
-    text-decoration: underline;
-    text-decoration-style: double;
+.footerbackground {
+    background-color: #474747;
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+    padding: 50px 10px;
+    text-align: center;
+    color: #fcdcd2;
 }
